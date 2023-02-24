@@ -190,3 +190,23 @@ button {
  .skill-icon {
     width: 75px;
  }
+
+ /**
+  * PROJECTS SECTION
+  */
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 1rem 40px;
+  }
+
+  .project-card {
+    background-color: #534C57;
+    height: 500px;
+    width: 350px;
+    /* width: 24%; */
+    cursor: pointer;
+  }
