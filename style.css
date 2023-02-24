@@ -192,6 +192,36 @@ button {
  }
 
  /**
+  * EXPERIENCE SECTION
+  */
+
+/* Cite: https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+    display: block;
+    justify-self: center;
+    background-color: #888;
+    cursor: pointer;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #aaa;
+}
+
+.exp-panel {
+    padding: 0px 18px;
+    display: none;
+    width: calc(85% - 36px);
+    margin: auto;
+    background-color: #534C57;
+    overflow: hidden;
+}
+
+
+ /**
   * PROJECTS SECTION
   */
 
