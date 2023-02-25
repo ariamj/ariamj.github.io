@@ -11,11 +11,13 @@ body {
 
 header {
     position: sticky;
+    z-index: 99;
     top: 0px;
-
     margin: 0px;
     background: radial-gradient(61.47% 107.29% at 50% 88.54%, #d09ee2 0%, rgba(217, 183, 222, 0) 100%);
     filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.75));
+    background-color: #000000;
+    width: 100%;
 }
 
 div {
@@ -143,9 +145,39 @@ button {
     display: block;
 }
 
-.section {
+/**
+ * GENERAL STYLING
+ */
+
+ .section {
     display: block;
     visibility: visible;
+}
+
+/* Cite for shadow: https://codepen.io/opinatj/pen/ZEEaNYm */
+.card {
+    /* background-color: #FFFFFF; */
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 30px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    padding: 1rem;
+    margin: 0px;
+    font-size: 25px;
+}
+
+.description {
+    font-size: 20px;
 }
 
 
@@ -195,29 +227,23 @@ button {
   * EXPERIENCE SECTION
   */
 
-/* Cite: https://www.w3schools.com/howto/howto_js_accordion.asp */
-.accordion {
-    display: block;
-    justify-self: center;
-    background-color: #888;
-    cursor: pointer;
-    width: 85%;
-    margin: auto;
-    text-align: center;
-    transition: 0.4s;
+.exp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 1rem 40px;
 }
 
-.active, .accordion:hover {
-    background-color: #aaa;
-}
-
-.exp-panel {
-    padding: 0px 18px;
-    display: none;
-    width: calc(85% - 36px);
-    margin: auto;
+.experience-card {
     background-color: #534C57;
-    overflow: hidden;
+    height: 250px;
+    width: 500px;
+}
+
+.exp-title {
+    /* padding: 1rem;
+    font-size: 25px; */
 }
 
 
@@ -234,9 +260,58 @@ button {
   }
 
   .project-card {
-    background-color: #534C57;
+    position: relative;
     height: 500px;
     width: 350px;
     /* width: 24%; */
-    cursor: pointer;
+    /* background: url("./images/jellyfish.jpg"); */
+    /* background-color: #000000; */
+    display: flex;
   }
+
+  .project-card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 100%;
+  }
+
+  .project-card:hover > .project-card-image {
+    opacity: 60%;
+  }
+
+  .project-title {
+    /* padding: 1rem; */
+    /* font-size: 25px; */
+    position: relative;
+  }
+
+  /**
+   * EDUCATION SECTION
+   */
+
+   /* Cite: https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+    display: block;
+    justify-self: center;
+    background-color: #888;
+    cursor: pointer;
+    width: 85%;
+    margin: auto;
+    /* text-align: center; */
+    /* transition: 0.4s; */
+    position: static;
+}
+
+.active, .accordion:hover {
+    background-color: #aaa;
+}
+
+.edu-panel {
+    padding: 0px 18px;
+    display: none;
+    width: calc(85% - 36px);
+    margin: auto;
+    background-color: #534C57;
+    overflow: hidden;
+}
