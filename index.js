@@ -46,17 +46,27 @@ document.addEventListener('scroll', function() {
 })
 
 /**
+ * NAVIGATION
+ * Cite: https://youtu.be/hk3RgcBx5Fc
+ */
+
+const navigation = document.querySelector("header")
+const navigationHegiht = navigation.offsetHeight;
+document.documentElement.style.setProperty(
+    "--scroll-padding",
+    navigationHegiht + "px"
+);
+
+/**
  * SCROLL TRACKING
  * Cite: https://youtu.be/VgS5CP7zlXE 
  */
 const scrollTracker = document.querySelector(".scroll-tracker");
-
 const scrollTrackingTimeline = new ScrollTimeline({
     source: document.scrollingElement,
     orientation: "block",
     scrollOffsets: [CSS.percent(0), CSS.percent(100)],
 });
-
 scrollTracker.animate(
     {
         transform: ["scaleX(0)", "scaleX(1)"],
@@ -99,11 +109,9 @@ const animatedSections = document.querySelectorAll(".section");
  * Cite: https://youtu.be/VgS5CP7zlXE
  */
 const animatedImages = document.querySelectorAll(".image-rotate-in");
-
 animatedImages.forEach(image => {
     const imageOffsetTop = image.offsetTop;
     const imageHeight = image.offsetHeight;
-
     const animatedImageTimeline = new ScrollTimeline({
         // scrollOffsets: [
         //     {target: image, edge: "end", threshold: "0"},

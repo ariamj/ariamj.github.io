@@ -4,7 +4,16 @@
     background-color: aqua;
 } */
 
+html {
+    /* Cite for nav scrolling: https://youtu.be/hk3RgcBx5Fc */
+    scroll-behavior: smooth;
+    /* scroll-padding: 10rem; */
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+
 body {
+    background-image: url("./images/bubbles_static.png");
+    background-repeat:round;
     background-color: rgba(125, 111, 135, 0.8);
     /* background-color: rgba(0, 0, 0, 1.0); */
 }
@@ -188,7 +197,7 @@ button {
  .container {
     display: grid;
     /* grid-template-columns: repeat(4, 1fr); */
-    grid: auto / repeat(30, 1fr);
+    grid: auto / repeat(56, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -199,16 +208,18 @@ button {
 
  .skill-box {
     /* padding: 1rem; */
-    grid-column: span 5;
+    grid-column: span 7;
     /* background-color: #FFFFFF; */
  }
 
- .container .skill-box:nth-child(11n),
- .container .skill-box:nth-child(11n-1),
- .container .skill-box:nth-child(11n-2),
- .container .skill-box:nth-child(11n-3),
- .container .skill-box:nth-child(11n-4) {
-    grid-column: span 6;
+ .container .skill-box:nth-child(15n),
+ .container .skill-box:nth-child(15n-1),
+ .container .skill-box:nth-child(15n-2),
+ .container .skill-box:nth-child(15n-3),
+ .container .skill-box:nth-child(15n-4),
+ .container .skill-box:nth-child(15n-5),
+ .container .skill-box:nth-child(15n-6) {
+    grid-column: span 8;
  }
 
  .skill-title {
@@ -220,7 +231,7 @@ button {
  }
 
  .skill-icon {
-    width: 75px;
+    width: 50px;
  }
 
  /**
@@ -237,8 +248,8 @@ button {
 
 .experience-card {
     background-color: #534C57;
-    height: 250px;
-    width: 500px;
+    height: 450px;
+    width: 650px;
 }
 
 .exp-title {
