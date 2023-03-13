@@ -162,7 +162,7 @@ animatedImages.forEach(image => {
 
 
 /**
- * EXPERIENCE SECTION
+ * EDUCATION SECTION
  */
 
 /* Cite: https://www.w3schools.com/howto/howto_js_accordion.asp */
@@ -171,6 +171,27 @@ let i;
 
 for (i=0; i<acc.length; i++) {
     acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.display == "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+
+/**
+ * FOOTER SECTION
+ */
+
+/* Cite: https://www.w3schools.com/howto/howto_js_accordion.asp */
+let icon_acc = document.getElementsByClassName("icon-accordion");
+// let i;
+
+for (let i=0; i<icon_acc.length; i++) {
+    icon_acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         let panel = this.nextElementSibling;
         if (panel.style.display == "block") {
