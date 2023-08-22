@@ -1,0 +1,268 @@
+html {
+    /* Cite for nav scrolling: https://youtu.be/hk3RgcBx5Fc */
+    scroll-behavior: smooth;
+    /* scroll-padding: 10rem; */
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+
+body {
+    /* background-image: url("./images/bubbles_static.png"); */
+    background-image: url("./images/abstractBackground.png");
+    background-repeat: repeat;
+    /* background-color: rgba(125, 111, 135, 0.8); */
+    background-color: rgba(0, 0, 0, 0.8);
+    background-attachment: fixed;
+    /* background-color: rgba(0, 0, 0, 1.0); */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    z-index: 99;
+    top: 0px;
+    margin: 0px;
+    background: radial-gradient(61.47% 107.29% at 50% 88.54%, #d09ee2 0%, rgba(217, 183, 222, 0) 100%);
+    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.75));
+    background-color: #000000;
+    width: 100%;
+    /* height: 128px; */
+    display: flex;
+    text-align: center;
+}
+
+/**
+ * =========================================================================
+ * TITLE
+ * =========================================================================
+ */
+
+ .titleSector {
+    /* margin: 0px;
+    background: radial-gradient(61.47% 107.29% at 50% 88.54%, #d09ee2 0%, rgba(217, 183, 222, 0) 100%);
+    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.75)); */
+    position: relative;
+    /* top: 0px; */
+    margin: 0;
+    display: inline-block;
+    width: 33.33%;
+}
+
+.titleSector h1 {
+    margin: 0;
+    position: relative;
+    /* left: 23px; change for dynamic */
+    /* top: 15px; change for dynamic */
+    
+    font-family: 'Italianno', cursive;
+    font-size: 102px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 1.0);
+
+    /* https://stackoverflow.com/questions/2570972/css-font-border */
+    /* -webkit-text-stroke: 1px #FFFFFF; */
+}
+
+
+/**
+ * =========================================================================
+ * NAVIGATION
+ * =========================================================================
+ */
+
+ .header .navbar {
+    display: flex;
+    width: 33.33%;
+    height: 64px;
+    top: 0;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 1rem;
+ }
+
+ .header .navbar a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 10px;
+ }
+
+ .header .navbar a:hover {
+    color: #b09fb9;
+    border-bottom: 1px solid #b09fb9;
+ }
+
+
+/**
+ * =========================================================================
+ * GENERAL STYLINGS
+ * =========================================================================
+ */
+
+ .section {
+    display: flex;
+    flex-flow: column;
+    visibility: visible;
+    /* background-color: gray; */
+    border: 5px solid black; /* temp */
+ }
+
+ .section .sectionText {
+    font-family: 'Italiana', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    /* display: flex; */
+    margin-bottom: 5px;
+    /* align-items: center; */
+    /* justify-self: center; */
+    text-align: center;
+    color: #FFFFFF;
+    flex-grow: 1;
+    /* background-color: #534C57; temp */
+}
+
+.section-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 1rem 40px;
+}
+
+/* Cite for shadow: https://codepen.io/opinatj/pen/ZEEaNYm */
+.card {
+    /* background-color: #FFFFFF; */
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 30px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    position: relative;
+    margin: 5px;
+    padding: 0 1rem;
+    font-size: 25px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+/* Glass Effect; Cite: https://youtu.be/3HRvb2tLqF4?list=PL1Y46f7xTSVR74n4fqHJBG08QAyDNJCaW */
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/**
+ * =========================================================================
+ * SKILLS
+ * =========================================================================
+ */
+
+.skill-card {
+    width: 98%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+ /**
+ * =========================================================================
+ * EXPERIENCE
+ * =========================================================================
+ */
+
+ .exp-container {
+    /* display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 1rem 40px; */
+ }
+
+ .experience-card {
+    /* background-color: #534C57; */
+    border: 1px solid rgba(255, 0, 0, 0.625);
+    height: 450px;
+    width: 650px;
+}
+
+.exp-title {
+    /* position: relative;
+    margin: 5px;
+    padding: 0 1rem; */
+}
+
+
+ /**
+ * =========================================================================
+ * PROJECTS
+ * =========================================================================
+ */
+
+ .projects-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* justify-content: space-evenly;
+    gap: 8px;
+    padding: 1rem 40px; */
+ }
+
+ .project-card {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    height: 500px;
+    width: 400px;
+    /* background-color: #534C57; */
+    border: 1px solid rgba(9, 255, 0, 0.625);
+ }
+
+ .project-title {
+    /* position: relative;
+    margin: 5px;
+    padding: 0 1rem; */
+ }
+
+
+ /**
+ * =========================================================================
+ * EDUCATION
+ * =========================================================================
+ */
+
+ .education-card {
+    /* background-color: #534c5782; */
+    border: 1px solid rgba(0, 60, 255, 0.625);
+    height: 250px;
+    width: 650px;
+ }
+
+ .edu-description {
+    padding-left: 2%;
+ }
+
+
+ /**
+ * =========================================================================
+ * DEMOS
+ * =========================================================================
+ */
