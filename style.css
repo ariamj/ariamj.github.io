@@ -8,13 +8,15 @@ html {
 body {
     /* background-image: url("./images/bubbles_static.png"); */
     background-image: url("./images/abstractBackground.png");
-    background-repeat: repeat;
+    background-repeat: round;
     /* background-color: rgba(125, 111, 135, 0.8); */
     background-color: rgba(0, 0, 0, 0.8);
     background-attachment: fixed;
     /* background-color: rgba(0, 0, 0, 1.0); */
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -55,7 +57,8 @@ header {
     /* top: 15px; change for dynamic */
     
     font-family: 'Italianno', cursive;
-    font-size: 102px;
+    /* font-size: 102px; */
+    font-size: 8vw;
     font-weight: 400;
     font-style: normal;
     color: white;
@@ -83,10 +86,12 @@ header {
     justify-content: space-around;
     text-align: center;
     padding: 0 1rem;
+    margin-left: 10px;
  }
 
  .header .navbar a {
     color: white;
+    font-size: 1.5vw;
     font-weight: bolder;
     text-decoration: none;
     padding: 10px 10px;
@@ -95,6 +100,22 @@ header {
  .header .navbar a:hover {
     color: #b09fb9;
     border-bottom: 1px solid #b09fb9;
+ }
+
+
+ /**
+ * =========================================================================
+ * FOOTER
+ * =========================================================================
+ */
+
+ footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
  }
 
 
@@ -110,6 +131,8 @@ header {
     visibility: visible;
     /* background-color: gray; */
     border: 5px solid black; /* temp */
+    height: 100%;
+    width: 100%;
  }
 
  .section .sectionText {
@@ -183,6 +206,55 @@ header {
     width: 98%;
     padding-left: 2%;
     padding-right: 2%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.skill-category h4{
+    justify-self: center;
+}
+
+.skill-card li{
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+}
+
+.skill-card li h5{
+    margin: 5px 0;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    animation-duration: 3s;
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(0, 217, 246)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.percentile {
+    width: 100%;
+    animation: animationProgress 3s;
+}
+
+@keyframes animationProgress{
+    0%{
+        width: 0%
+    }
 }
 
  /**
@@ -196,6 +268,7 @@ header {
     justify-content: space-evenly;
     gap: 8px;
     padding: 1rem 40px; */
+    flex-wrap: wrap;
  }
 
  .experience-card {
@@ -242,12 +315,42 @@ header {
     padding: 0 1rem; */
  }
 
+ .proj-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+ }
+
+ .project-card button {
+    width: 150px;
+    height: 60px;
+    margin: 20px 10px;
+    padding: 5px;
+    font: inherit;
+    font-size: 2.25vmin;
+    color: rgba(9, 255, 0, 0.625);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    border: 2px solid rgba(9, 255, 0, 0.625);
+ }
+
+ .project-card button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.33);
+ }
+
 
  /**
  * =========================================================================
  * EDUCATION
  * =========================================================================
  */
+
+ .edu-container {
+    flex-wrap: wrap;
+ }
 
  .education-card {
     /* background-color: #534c5782; */
@@ -259,7 +362,6 @@ header {
  .edu-description {
     padding-left: 2%;
  }
-
 
  /**
  * =========================================================================
