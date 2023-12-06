@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet">
 
+    <!-- FROM YOUTUBE TUTORIAL - TODO: DELETE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+
+
     <link rel="stylesheet" href="style.css">
     <script type="module" src="index.js"></script>
 
@@ -21,6 +29,9 @@
     <div class="scroll-tracker"></div>
     
     <header class="header">
+        <div class="titleSector">
+            <h1>Arianna Joe</h1>
+        </div>
         <!-- TODO: (For button icon) https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js -->
         <div class="navbar">
             <!-- <button class="button dropbtn">Skip</button> -->
@@ -29,10 +40,7 @@
             <a href="#Education">Education</a>
             <a href="#Projects">Projects</a>
             <a href="#Demos">Demos</a>
-          </div> 
-        <div class="titleSector">
-            <h1>Arianna Joe</h1>
-        </div>
+          </div>
     </header>
     <!-- <h2>~ THIS WEBSITE IS STILL A WORK IN PROGRESS... ~</h1> -->
     <section id="Skills" class="section">
@@ -114,7 +122,8 @@
         <div class="section-container exp-container">
             <div class="card experience-card glass">
                 <div class="card-title exp-title">
-                    <h3>PayByPhone - Software Developer</h3>
+                    <h3>Software Developer Intern</h3>
+                    <h4>PayByPhone</h4>
                 </div>
                 <div class="description exp-description">
                     <ul>
@@ -127,7 +136,8 @@
             </div>
             <div class="card experience-card glass">
                 <div class="card-title exp-title">
-                    <h3>SAP - Agile Developer Intern</h3>
+                    <h3>Agile Developer Intern</h3>
+                    <h4>SAP</h4>
                 </div>
                 <div class="description exp-description">
                     <ul>
@@ -141,7 +151,8 @@
             </div>
             <div class="card experience-card glass">
                 <div class="card-title exp-title">
-                    <h3>UBC - Undergrad Teaching Assistant</h3>
+                    <h3>Undergrad Teaching Assistant</h3>
+                    <h4>UBC</h4>
                 </div>
                 <div class="description exp-description">
                     <ul>
@@ -159,16 +170,12 @@
         <div class="section-container edu-container">
             <div class="card education-card glass">
                 <!-- Cite: https://www.w3schools.com/howto/howto_js_accordion.asp -->
-                <div class="card-title edu-title"><h3>University of British Columbia</h3></div>
-                <div class="description edu-description">
-                    <p>Major in Computer Science, BSc</p>
-                    <p>Grad: 2025</p>
+                <div class="card-title edu-title">
+                    <h3>University of British Columbia</h3>
+                    <h4>Major in Computer Science, BSc</h4>
                 </div>
-            </div>
-            <div class="card education-card glass">
-                <div class="card-title edu-title"><h3>High School</h3></div>
                 <div class="description edu-description">
-                    <p>Grad: 2020</p>
+                    <p>Grad: 2025</p>
                 </div>
             </div>
         </div>
@@ -181,7 +188,9 @@
                     <h3>Personal Website (this)</h3>
                 </div>
                 <div class="image-holder"></div>
-                <div class="description proj-description"></div>
+                <div class="description proj-description">
+                    <p>A dive into website design and development using HTML, CSS, and JavaScript.</p>
+                </div>
                 <div class="proj-btn-container">
                     <a href="https://ariamj.github.io/" target="_blank"><button class="proj-btn" type="button">Visit</button></a>
                     <a href="" target="_blank"><button class="proj-btn">Repository</button></a>
@@ -192,7 +201,9 @@
                     <h3>Insight UBC</h3>
                 </div>
                 <div class="image-holder"></div>
-                <div class="description proj-description"></div>
+                <div class="description proj-description">
+                    <p>Ever want to know more about the details of each building at UBC? Insight UBC provides just that, and insight into the UBC buildings.</p>
+                </div>
                 <div class="proj-btn-container">
                     <a href="" target="_blank"><button class="proj-btn" type="button">Visit</button></a>
                     <a href="" target="_blank"><button class="proj-btn">Repository</button></a>
@@ -203,7 +214,9 @@
                     <h3>Gallery Manager</h3>
                 </div>
                 <div class="image-holder"></div>
-                <div class="description proj-description"></div>
+                <div class="description proj-description">
+                    <p>Organizing an art gallery made easy.</p>
+                </div>
                 <div class="proj-btn-container">
                     <a href="" target="_blank"><button class="proj-btn" type="button">Visit</button></a>
                     <a href="" target="_blank"><button class="proj-btn">Repository</button></a>
@@ -214,9 +227,19 @@
                     <h3>Big 2</h3>
                 </div>
                 <div class="image-holder"></div>
-                <div class="description proj-description"></div>
+                <div class="description proj-description">
+                    <p>A little virtual game of Big 2. But it's not your average version of the common card game.</p>
+                </div>
                 <div class="proj-btn-container">
-                    <a href="" target="_blank"><button class="proj-btn" type="button">Visit</button></a>
+                    <!-- FROM YOUTUBE TUTORIAL - TODO: DELETE -->
+                    <a href="#projectdemo" class="video-button" id="videolink">
+                        Demo <i class="fa fa-play-circle" aria-hidden="true">&nbsp;</i>
+                    </a>
+                    <div id="projectdemo" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/US8ePkxYI3E?si=BFA8K6hTJb7tdsK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <a src="./videos/Project_Demo.mp4" target="_blank"><button class="proj-btn" type="button">Demo</button></a>
                     <a href="" target="_blank"><button class="proj-btn">Repository</button></a>
                 </div>
             </div>
@@ -225,7 +248,9 @@
                     <h3>Crazy 8</h3>
                 </div>
                 <div class="image-holder"></div>
-                <div class="description proj-description"></div>
+                <div class="description proj-description">
+                    <p>Play a virtual game of Crazy 8.</p>
+                </div>
                 <div class="proj-btn-container">
                     <a href="" target="_blank"><button class="proj-btn" type="button">Visit</button></a>
                     <a href="" target="_blank"><button class="proj-btn">Repository</button></a>
@@ -236,7 +261,9 @@
                     <h3>Black Jack</h3>
                 </div>
                 <div class="image-holder"></div>
-                <div class="description proj-description"></div>
+                <div class="description proj-description">
+                    <p>Play a virtual game of Black Jack.</p>
+                </div>
                 <div class="proj-btn-container">
                     <a href="" target="_blank"><button class="proj-btn" type="button">Visit</button></a>
                     <a href="" target="_blank"><button class="proj-btn">Repository</button></a>

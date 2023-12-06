@@ -183,6 +183,17 @@ for (i=0; i<acc.length; i++) {
 
 
 /**
+ * PROJECT SECTION
+ */
+
+// FROM YOUTUBE TUTORIAL - TODO: DELETE
+$('#videolink').magnificPopup({
+    type:'inline',
+    midClick:true
+})
+
+
+/**
  * FOOTER SECTION
  */
 
